@@ -1,0 +1,30 @@
+---
+- stat: path=/vagrant/typo3_src
+  register: typo3_exist
+
+- name: Get Typo3
+  get_url: url=http://get.typo3.org/{{ typo3.version }} dest=/vagrant/typo3_src.tar.gz
+  when: typo3_exist.stat.exists == False
+
+- name: Unpack Typo3
+  unarchive: src=/vagrant/typo3_src.tar.gz dest=/vagrant/ copy=no
+  when: typo3_exist.stat.exists == False
+
+- name: Renaming Src-Dir
+  command: mv /vagrant/typo3_src-{{ typo3.version }}  /vagrant/typo3_src
+  when: typo3_exist.stat.exists == False
+
+- name: Delete Typo3-Download-Package
+  file: path=/vagrant/typo3_src.tar.gz state=absent
+  when: typo3_exist.stat.exists == False
+
+- name: Symlinking
+  file: src={{ item.src }} dest={{ item.dest }} state=link
+  with_items:
+    - { src: 'typo3_src/index.php', dest: '/vagrant/index.php' }
+    - { src: 'typo3_src/typo3', dest: '/vagrant/typo3' }
+  when: typo3_exist.stat.exists == False
+
+- name: htaccess
+  command: cp /vagrant/typo3_src/_.htaccess /vagrant/.htaccess
+  when: typo3_exist.stat.exists == False
