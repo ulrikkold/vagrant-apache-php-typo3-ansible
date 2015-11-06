@@ -10,7 +10,7 @@ vagrant_local:
 apache:
     install: '1'
     docroot: /vagrant
-    servername: gfe-dhs.dev
+    servername: hostname.dev
 mysql:
     install: '1'
     root_password: ''
