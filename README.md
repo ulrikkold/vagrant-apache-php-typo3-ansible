@@ -3,7 +3,8 @@
 Author: AREA-NET GmbH, Markus Schmid www.area-net.de | www.app-agentur-bw.de
 
 * Ubuntu (latest stable)
-* Apache 2.4 (imagemagick, npm)
+* ImageMagick, Node/NPM
+* Apache 2.4
 * PHP 5.6 (imagick, curl, gd, intl, cli, mysql)
 * MySQL (latest stable)
 * Xdebug
