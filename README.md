@@ -2,7 +2,7 @@
 
 Author: AREA-NET GmbH, Markus Schmid www.area-net.de | www.app-agentur-bw.de
 
-* Current Ubuntu system
+* Ubuntu (latest stable)
 * Apache 2.4 (imagemagick, npm)
 * PHP 5.6 (imagick, curl, gd, intl, cli, mysql)
 * MySQL (latest stable)
