@@ -43,6 +43,10 @@ Author: AREA-NET GmbH, Markus Schmid www.area-net.de | www.app-agentur-bw.de
 
 * Open browser and see the Typo3 installation wizard on http://192.168.33.99
 * Optional: Setting hostname.dev in /etc/hosts to 192.168.33.99
+* SSH-Access to the vagrant box
+```
+> vagrant ssh
+```
 
 ## Customizing
 
