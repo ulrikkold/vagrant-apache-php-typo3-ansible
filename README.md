@@ -61,7 +61,7 @@ Re-provision the box after changing vars with
 
 The MIT License (MIT)
 
-Copyright (c) [year] [fullname]
+Copyright (c) 06.11.2015 AREA-NET GmbH, App-Agentur BW, Markus Schmid
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
