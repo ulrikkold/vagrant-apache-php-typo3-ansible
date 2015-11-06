@@ -1,5 +1,7 @@
 # vagrant-apache-php-typo3-ansible
 
+Author: AREA-NET GmbH, Markus Schmid www.area-net.de | www.app-agentur-bw.de
+
 * Current Ubuntu system
 * Apache 2.4 (imagemagick, npm)
 * PHP 5.6 (imagick, curl, gd, intl, cli, mysql)
