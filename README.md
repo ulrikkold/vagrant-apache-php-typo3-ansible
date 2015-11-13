@@ -29,8 +29,20 @@ Author: AREA-NET GmbH, Markus Schmid www.area-net.de | www.app-agentur-bw.de
 
 ### Windows
 
-* Tutorial: http://www.azavea.com/blogs/labs/2014/10/running-vagrant-with-ansible-provisioning-on-windows/
-* Windows shell provisioning script: https://github.com/geerlingguy/JJG-Ansible-Windows
+### Install Ansible
+
+* No installation needed, ansible is running on the vagrant box
+
+### Install recommended software
+
+* https://github.com/winnfsd/vagrant-winnfsd (NFS-Support for Windows)
+```
+vagrant plugin install vagrant-winnfsd 
+```
+* https://git-for-windows.github.io/
+
+Use the following command line tools from the installed git bash
+
 
 ## Start up
 
